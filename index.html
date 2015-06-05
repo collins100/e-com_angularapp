@@ -5,12 +5,13 @@
   </head>
   <body ng-controller="StoreController as store"> 
     <!-- Products Container -->   
-    <div class="list-group">
+    <ul class="list-group">
     <!-- Product Container -->
-  	  <div class="list-group-item" ng-repeat="product in store.products">
+  	  <li class="list-group-item" ng-repeat="product in store.products">
   		  <h3>
           {{product.name}}
   		  	<em class="pull-right">{{product.price | currency}}</em>
+          <img ng-src="{{product.images[0].full}}"
   		  </h3>
         <p> {{product.description}}</p>
         <button ng-show="product.canPurchase"> Add to Cart </button>
@@ -22,8 +23,8 @@
               <li class="small-image pull-left thumbnail" ng-repeat="image in product.images"> <img ng-src="{{image}}"/></li>
            </ul>
         </div> 
-  		</div>
-    </div>
+  		</li>
+    </ul>  
     <script type="text/javascript" src="angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
   </body>

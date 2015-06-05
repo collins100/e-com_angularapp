@@ -6,8 +6,7 @@
 
 	});
 
-	var gems = [
-	{
+	var gems = {
 		name: "Dodecahedron",
 		price: 2.95,
 		description: ". . .",
@@ -34,3 +33,6 @@
 ];
 
 }) () ;
+
+
+
