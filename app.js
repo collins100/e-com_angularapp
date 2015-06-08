@@ -6,33 +6,36 @@
 
 	});
 
-	var gems = {
+	var gems = [
+
+	{
 		name: "Dodecahedron",
 		price: 2.95,
 		description: ". . .",
-		images: {
-            full: 'Dodecahedron.jpeg'
-            thumb:'Dodecahedron.jpeg'
-		
-		   }
+		images: [
+			full: 'Dodecahedron.jpeg'
+			thumb:'Dodecahedron.jpeg'
+		]
 
-		canPurchase: true,
+		canPurchase = true,
+
 	},
 	{
 		name: "Pentagonal Gem",
 		price: 5.95,
 		description: ". . .",
-		images: {
-            full:'Pentagonal.jpg'
-            thumb:'Pentagonal.jpg'
+		images: [
+            full:"Pentagonal.jpg"
+            thumb:"Pentagonal.jpg"
 
-		   }
+		   ]
 
-		canPurchase: false,
+		   canPurchase = false,
+
 	}
-];
+
+	];
 
 }) () ;
-
 
 
